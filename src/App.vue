@@ -1,10 +1,10 @@
 <template>
 <div class="flex flex-col flex-initial items-center mt-10">
-  <p class="mb-10 text-[50px]">Coordinate simulator 2022</p>
-  <input v-model="text" @keyup.enter="submit" class="text-[25px] mb-10 border-2 border-black px-10 py-5">
+  <p class="mb-10 lg:text-[50px] md:text-[40px] text-[20px]">Coordinate simulator 2022</p>
+  <input v-model="text" @keyup.enter="submit" class="lg:text-[25px] text-[20px] mb-10 border-2 border-black lg:px-10 lg:py-5 md:px-8 md:py-5 w-[250px] md:w-[350px] lg:w-[500px] py-2 px-1">
   <p v-if="place" v-bind="place.country"></p>
-  <p>{{coordinateNum}}</p>
-  <p v-if="nomeLuogo">Place Name: {{nomeLuogo}}</p>
+  <p class="normalText">{{coordinateNum}}</p>
+  <p v-if="nomeLuogo" class="normalText">Place Name: {{nomeLuogo}}</p>
 </div>
 
 </template>
